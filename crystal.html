@@ -8,12 +8,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+
     <link rel="stylesheet" href="assets/css/reset.css">
 </head>
 
 <body>
     <div class="container bg-warning ml-0 m-1 col-md-3 p-4 h2">CrystalCollectors</div>
-    <div class="container col-md-4 bg-danger text-dark m-1  ml-0">
+    
+    <div class="container col-md-4 bg-danger text-dark ml-1">
         <p>You will be given a random number at the start of the game.</p>
         <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
             total score</p>
@@ -22,24 +25,26 @@
         <p>The value of each crystal is hidden from you until you click on it.</p>
         <p>Each time when the game starts, the game will change the values of each crystal</p>
     </div>
+
     <div class="row ml-1">
-        <div class="container col-md-3 bg-success p-5 ml-0 mr-0 "></div>
-        <div class="container col-md-1 bg-primary p-5 ml-1 ">
-            <p> Wins:0</p>
-            <p>Losses:0</p>
+        <div class="container col-md-3 bg-success p-5 ml-0 mr-0">
+        <span id="number-to-guess"></span>
+    </div>
+        <div class="container col-md-1 bg-primary p-4 ml-0 ">
+            <p id="wins"> Wins: 0</p>
+            <p id ="losses">Losses: 0</p>
         </div>
     </div>
 
-    <div class="container col-md-4 ml-0 m-1">
-        <img src="https://images-na.ssl-images-amazon.com/images/I/71Imq3vXaGL._SL1440_.jpg" alt="1st crystal">
-        <img src="https://www.thoughtco.com/thmb/TqQm3tRT4882EvcdDbqaogKDonI=/3609x2727/filters:fill(auto,1)/close-up-of-crystal-stone-glowing-in-darkroom-583919173-56f28e5d3df78ce5f83d7284.jpg"
-            alt="2nd crystal">
-        <img src="https://vignette.wikia.nocookie.net/mgefanon/images/6/69/Kinetic_Crystal.jpg/revision/latest?cb=20150409231719" alt="3rd crystal">
-        <img src="https://bronzeowl.github.io/crystal-collector/assets/images/blue-crystal.jpg" alt="4th crystal">
+    <div class="container col-md-4 ml-0 m-1 pl-0">
+        <input type="image" src="assets/images/crystal.jpg" class = "crystal" id= "one" width="100" height="100"/> 
+        <input type="image" src="assets/images/morecrystal.jpg" class = "crystal" id= "two" width="100" height="100"/> 
+        <input type="image" src="assets/images/nothercrystal.jpg" class = "crystal" id= "three" width="100" height="100"/> 
+        <input type="image" src="assets/images/Kinetic_Crystal.jpg" class = "crstal" id= "four" width="100" height="100"/> 
     </div>
 
-    <div class="container col-md-3 bg-success p-2 ml-0 m-1 ">Your total score is:</div>
-    <div class="container col-md-3 bg-success p-5 ml-0 m-1 ">0</div>
+    <div class="container col-md-3 bg-success p-2 ml-0 m-1">Your total score is:</div>
+    <div class="container col-md-3 bg-success p-5 ml-0 m-1 " id ="total">0</div>
 
     <script src="assets/javascript/js.js"></script>
 </body>
