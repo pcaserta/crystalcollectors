@@ -23,14 +23,13 @@ $(document).ready(function () {
 
     //function to reset the game after a win or loss//
     function reset() {
-        Random = Math.floor(Math.random() * 101 + 19);
+        Random = Math.floor((Math.random() * 120) + 19);
         console.log(Random)
         $("#number-to-guess").text(Random)
-        var num1 = Math.floor(Math.random() * 11 + 1)
-
-        var num2 = Math.floor(Math.random() * 11 + 1)
-        var num3 = Math.floor(Math.random() * 11 + 1)
-        var num4 = Math.floor(Math.random() * 11 + 1)
+        var num1 = Math.floor((Math.random() * 12) + 1)
+        var num2 = Math.floor((Math.random() * 12) + 1)
+        var num3 = Math.floor((Math.random() * 12) + 1)
+        var num4 = Math.floor((Math.random() * 12) + 1)
         userTotal = 0
 
         $("#total").text(userTotal);
