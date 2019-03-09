@@ -1,32 +1,33 @@
 //sets a random number at the start of game between 19-120//
 
 $(document).ready(function () {
-    var Random = Math.floor(Math.random() * 101 + 19)
+    var Random = Math.floor((Math.random() * 120) + 19)
     console.log(Random)
 
 
     $("#number-to-guess").text(Random);
 
     //set up random numbers for jewel value//
-    var num1 = Math.floor(Math.random() * 11 + 1)
-    var num2 = Math.floor(Math.random() * 11 + 1)
-    var num3 = Math.floor(Math.random() * 11 + 1)
-    var num4 = Math.floor(Math.random() * 11 + 1)
+    var num1 = Math.floor((Math.random() * 12) + 1)
+    var num2 = Math.floor((Math.random() * 12) + 1)
+    var num3 = Math.floor((Math.random() * 12) + 1)
+    var num4 = Math.floor((Math.random() * 12) + 1)
 
     //declaring variables to keep track of wins and losses//
     var userTotal = 0;
     var wins = 0;
-    var losses =  0;
-console.log(wins)
+    var losses = 0;
+    console.log(wins)
     $("#wins").text("Wins " + wins)
-    $("#losses").text("Losses " +losses)
+    $("#losses").text("Losses " + losses)
 
-//function to reset the game after a win or loss//
+    //function to reset the game after a win or loss//
     function reset() {
         Random = Math.floor(Math.random() * 101 + 19);
         console.log(Random)
         $("#number-to-guess").text(Random)
         var num1 = Math.floor(Math.random() * 11 + 1)
+
         var num2 = Math.floor(Math.random() * 11 + 1)
         var num3 = Math.floor(Math.random() * 11 + 1)
         var num4 = Math.floor(Math.random() * 11 + 1)
@@ -41,7 +42,7 @@ console.log(wins)
     function win() {
         alert("You won!!");
         wins++
-        $("#wins").text("Wins " +wins);
+        $("#wins").text("Wins " + wins);
         reset();
     }
 
@@ -49,7 +50,7 @@ console.log(wins)
     function lose() {
         alert("You lose!!")
         losses++
-        $("#losses").text("Losses " +losses)
+        $("#losses").text("Losses " + losses)
         reset()
     }
 
