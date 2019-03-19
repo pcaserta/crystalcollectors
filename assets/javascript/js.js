@@ -18,8 +18,8 @@ $(document).ready(function () {
     var wins = 0;
     var losses = 0;
     console.log(wins)
-    $("#wins").text("Wins " + wins)
-    $("#losses").text("Losses " + losses)
+    $("#wins").text("Wins: " + wins)
+    $("#losses").text("Losses: " + losses)
 
     //function to reset the game after a win or loss//
     function reset() {
@@ -41,7 +41,7 @@ $(document).ready(function () {
     function win() {
         alert("You won!!");
         wins++
-        $("#wins").text("Wins " + wins);
+        $("#wins").text("Wins: " + wins);
         reset();
     }
 
@@ -49,7 +49,7 @@ $(document).ready(function () {
     function lose() {
         alert("You lose!!")
         losses++
-        $("#losses").text("Losses " + losses)
+        $("#losses").text("Losses: " + losses)
         reset()
     }
 
