@@ -14,9 +14,11 @@
 </head>
 
 <body>
-    <div class="container bg-warning ml-0 m-1 col-md-12 p-4 h2 text-center">CrystalCollectors</div>
-    <div class="row ml-1">
-    <div class="container col-md-12 bg-danger text-center text-dark ml-0">
+        <div class="row ml-1 mr-1" id="toTheCenter">
+    <div class="container  col-md-12 bg-warning p-4 ml-0 mr-5 h2 mb-0 text-center" id= "toTheCenter">CrystalCollectors</div>
+        </div>
+    <div class="row ml-1 mr-1">
+    <div class="container col-md-12 bg-danger  text-center text-dark ml-0">
         <p>You will be given a random number at the start of the game.</p>
         <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
             total score.</p>
@@ -26,8 +28,8 @@
         <p>Each time when the game starts, the game will change the values of each crystal.</p>
     </div>
 </div>
-    <div class="row pt-1 ml-1 ">
-        <div class="container display-4 col-md-6 bg-success p-5 ml-0 mr-0 d-flex align-items-center justify-content-center ">
+    <div class="row  ml-1 mr-1 ">
+        <div class="container display-4 col-md-6 bg-success p-4 ml-0 mr-0 d-flex align-items-center justify-content-center ">
             <span   id="number-to-guess"></span>
         </div>
         <div  class="container text-center display-4  col-md-6 bg-primary p-3 ml-0 ">
@@ -35,17 +37,21 @@
             <p id="losses">Losses: 0</p>
         </div>
     </div>
-
-    <div class="container text-center col-md-12 ml-0 m-1 pl-0">
+    
+    <div class="container text-center col-md-12">
+            <div class="row ml-1 mr-1 d-flex align-items-center justify-content-center">
         <input type="image" src="assets/images/crystal.jpg" class="crystal" id="one" width="100" height="100" />
         <input type="image" src="assets/images/morecrystal.jpg" class="crystal" id="two" width="100" height="100" />
         <input type="image" src="assets/images/nothercrystal.jpg" class="crystal" id="three" width="100" height="100" />
         <input type="image" src="assets/images/finalcryystal.jpg" class="crstal" id="four" width="100" height="100" />
     </div>
-
-    <div class="container col-md-12 text-center bg-success p-2 ml-0 m-1">Your total score is:</div>
-    <div class="container display-4 col-md-12 bg-success p-5 ml-0 m-1 d-flex align-items-center justify-content-center" id="total">0</div>
-
+    </div>
+    <div class="row ml-1 mr-1">
+    <div class="container col-md-12 text-center bg-success p-2">Your total score is:</div>
+    </div>
+    <div class="row ml-1 mr-1">
+    <div class="container display-4 col-md-12 bg-success p-3  d-flex align-items-center justify-content-center" id="total">0</div>
+</div>
     <script src="assets/javascript/js.js"></script>
 </body>
 
