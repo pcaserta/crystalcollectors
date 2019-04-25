@@ -3,7 +3,7 @@ body{
 
 }
 
-#specialss, #wins, #losses, #number-to-guess{
+#specialss, #wins, #losses, #number-to-guess, #total{
     font-size: 25px
 }
 
