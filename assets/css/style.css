@@ -1,10 +1,12 @@
-body{
-    background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/crossline-lines.png);
-
+body {
+  /* background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/crossline-lines.png); */
+  background-color: black;
 }
 
-#specialss, #wins, #losses, #number-to-guess, #total{
-    font-size: 25px
+#specialss,
+#wins,
+#losses,
+#number-to-guess,
+#total {
+  font-size: 25px;
 }
-
-
